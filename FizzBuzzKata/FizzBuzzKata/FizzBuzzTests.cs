@@ -47,6 +47,21 @@ namespace FizzBuzzKata
             Assert.Equal(expected, f2.Get(number));
         }
 
+
+        [Theory]
+        [InlineData(100)]
+        public void FizzBuzzConsoleSPA(int number)
+        {
+            var sw = new Stopwatch();
+            sw.Start();
+            for (int i = 0; i < number; i++)
+            {
+                f.Get(i);
+            }
+            sw.Stop();
+            Console.Out.WriteLine(sw.Elapsed);
+        }
+
         [Theory]
         [InlineData(100)]
         public void FizzBuzzConsole(int number)
@@ -55,10 +70,10 @@ namespace FizzBuzzKata
             sw.Start();
             for (int i = 0; i < number; i++)
             {
-                Console.WriteLine(f.Get(i));
+                f.Get(i);
             }
             sw.Stop();
-
+            Console.Out.WriteLine(sw.Elapsed);
         }
 
         [Theory]
@@ -69,7 +84,7 @@ namespace FizzBuzzKata
             sw.Start();
             for (int i = 0; i < number; i++)
             {
-                Console.WriteLine(f2.Get(i));
+                f2.Get(i);
             }
             sw.Stop();
             Console.WriteLine(sw.Elapsed);

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="FizzBuzzer.cs" />
     <Compile Include="FizzBuzzerAkoNhu.cs" />
+    <Compile Include="FizzBuzzerSpa.cs" />
     <Compile Include="FizzBuzzTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

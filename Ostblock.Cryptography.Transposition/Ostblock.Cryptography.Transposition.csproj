@@ -40,11 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GartenZaunAlgorithm.cs" />
-    <Compile Include="GartenzaunAlgService.cs" />
-    <Compile Include="IAlgorithm.cs" />
-    <Compile Include="IAlgService.cs" />
+    <Compile Include="OctothorpeAlgorithm.cs" />
+    <Compile Include="Interfaces\IAlgorithm.cs" />
+    <Compile Include="Interfaces\IInitialVector.cs" />
+    <Compile Include="Interfaces\IVigenereAlgorythm.cs" />
+    <Compile Include="PrimitiveALgorithmType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VigenereAlgorythm.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

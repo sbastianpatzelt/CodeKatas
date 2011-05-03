@@ -1,4 +1,7 @@
-﻿using FizzBuzz.Objects;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using FizzBuzz.Objects;
 
 namespace FizzBuzzKata
 {
@@ -14,6 +17,11 @@ namespace FizzBuzzKata
                 return "Fizz";
 
             return i.ToString();
+        }
+
+        public IEnumerable<string> Get(IEnumerable<int> i)
+        {
+            return i.Select(Get);
         }
 
         private bool IsFizzBuzz(int i)

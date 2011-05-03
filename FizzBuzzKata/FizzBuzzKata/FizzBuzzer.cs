@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using FizzBuzz.Objects;
 
 namespace FizzBuzzKata
@@ -15,6 +17,11 @@ namespace FizzBuzzKata
             if (fizz || buzz)
                 toReturn = GetFizzBuzzString(fizz, buzz);
             return toReturn;
+        }
+
+        public IEnumerable<string> Get(IEnumerable<int> i)
+        {
+            return i.Select(Get);
         }
 
         private string GetFizzBuzzString(bool fizz, bool buzz)

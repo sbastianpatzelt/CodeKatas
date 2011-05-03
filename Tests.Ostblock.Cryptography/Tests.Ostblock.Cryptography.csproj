@@ -43,8 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GartenzaunAlgorithmTests.cs" />
+    <Compile Include="OctothorpeAlgorithmTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VigenereAlgorythmTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ostblock.Cryptography.Transposition\Ostblock.Cryptography.Transposition.csproj">
